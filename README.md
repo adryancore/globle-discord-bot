@@ -6,8 +6,9 @@ A Discord bot designed to enhance engagement in your #globle channel by tracking
 
 - **Score Tracking**: Automatically detects and records Globle scores from user messages
 - **Daily Winner**: Declares a winner at the end of each day based on the fewest guesses
-- **Personalized Reminders**: Sends reminders at 8am and 9pm in each user's local timezone
+- **Personalized Reminders**: Sends reminders at 8am local time and 11pm Eastern Time
 - **Leaderboard**: Displays the current day's leaderboard on demand
+- **Timezone Management**: Users can set their local timezone for personalized morning reminders
 
 ## Setup Instructions
 
@@ -43,8 +44,35 @@ A Discord bot designed to enhance engagement in your #globle channel by tracking
 
 5. **Running the Bot**:
    ```bash
-   python bot.py
+   python globle_webhook.py
    ```
+
+## Deploying on Replit
+
+1. **Create a GitHub Repository**:
+   - Create a private GitHub repository
+   - Push your code to the repository (the `.gitignore` file will prevent sensitive data from being uploaded)
+
+2. **Set Up Replit**:
+   - Create a Replit account at [replit.com](https://replit.com/)
+   - Create a new Repl and select "Import from GitHub"
+   - Connect your GitHub account and select your repository
+
+3. **Configure Environment Variables**:
+   - In Replit, click on the lock icon in the sidebar to open the "Secrets" panel
+   - Add the following secrets:
+     - `DISCORD_WEBHOOK_URL`: Your Discord webhook URL
+     - `GLOBLE_CHANNEL_ID`: Your Discord channel ID
+
+4. **Enable "Always On"**:
+   - Click on your profile picture in the top right
+   - Go to "My Repls"
+   - Find your Globle bot repl
+   - Toggle "Always On" to keep your bot running 24/7
+
+5. **Run Your Bot**:
+   - Click the "Run" button at the top of the screen
+   - Replit will install dependencies and start your bot
 
 ## Usage
 

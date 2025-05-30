@@ -13,8 +13,8 @@ load_dotenv()
 WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL')
 DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN', '')
 DISCORD_PUBLIC_KEY = os.getenv('DISCORD_PUBLIC_KEY', '')
-# Use PORT environment variable for Railway compatibility
-PORT = int(os.getenv('PORT', os.getenv('SERVER_PORT', '8080')))
+# Use PORT environment variable for Replit compatibility
+PORT = int(os.getenv('PORT', os.getenv('REPLIT_PORT', os.getenv('SERVER_PORT', '8080'))))
 
 # Default timezone (Eastern Time)
 DEFAULT_TIMEZONE = 'America/New_York'
