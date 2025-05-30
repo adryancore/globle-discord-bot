@@ -1,0 +1,1 @@
+web: python globle_webhook.py
